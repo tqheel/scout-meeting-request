@@ -1,0 +1,73 @@
+<form [formGroup]="meetingRequestForm" (ngSubmit)="onSubmit()" class="meeting-request-form">
+    <div class="form-section">
+      <h3>Scout Information</h3>
+      
+      <div class="form-group">
+        <label for="scoutFirstName">Scout First Name *</label>
+        <input id="scoutFirstName" type="text" formControlName="scoutFirstName">
+      </div>
+  
+      <div class="form-group">
+        <label for="scoutLastName">Scout Last Name *</label>
+        <input id="scoutLastName" type="text" formControlName="scoutLastName">
+      </div>
+  
+      <div class="form-group">
+        <label for="rank">Rank *</label>
+        <input id="rank" type="text" formControlName="rank">
+      </div>
+  
+      <div class="form-group">
+        <label for="scoutEmail">Scout Email *</label>
+        <input id="scoutEmail" type="email" formControlName="scoutEmail">
+      </div>
+    </div>
+  
+    <div class="form-section">
+      <h3>Meeting Details</h3>
+      
+      <div class="form-group">
+        <label for="dateRequested">Date Requested *</label>
+        <input id="dateRequested" type="date" formControlName="dateRequested">
+      </div>
+  
+      <div class="form-group">
+        <label for="topics">Topics</label>
+        <textarea id="topics" formControlName="topics"></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="meritBadges">Merit Badges</label>
+        <input id="meritBadges" type="text" formControlName="meritBadges">
+      </div>
+    </div>
+  
+    <div class="form-section">
+      <h3>Parent Information</h3>
+      
+      <div class="form-group">
+        <label for="parentFirstName">Parent First Name *</label>
+        <input id="parentFirstName" type="text" formControlName="parentFirstName">
+      </div>
+  
+      <div class="form-group">
+        <label for="parentLastName">Parent Last Name *</label>
+        <input id="parentLastName" type="text" formControlName="parentLastName">
+      </div>
+  
+      <div class="form-group">
+        <label for="parentEmail">Parent Email *</label>
+        <input id="parentEmail" type="email" formControlName="parentEmail">
+      </div>
+    </div>
+  
+    <div class="form-section">
+      <div class="form-group">
+        <label for="notes">Notes</label>
+        <textarea id="notes" formControlName="notes"></textarea>
+      </div>
+    </div>
+  
+    <button type="submit" [disabled]="!meetingRequestForm.valid">Submit Request</button>
+  </form>
+  

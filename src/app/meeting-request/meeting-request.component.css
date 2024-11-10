@@ -1,0 +1,105 @@
+.meeting-request-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+  }
+  
+  .form-section h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 1.5em;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #34495e;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #dce4ec;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+  }
+  
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #27ae60;
+  }
+  
+  button[type="submit"]:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  /* Error states */
+  input.ng-invalid.ng-touched, 
+  textarea.ng-invalid.ng-touched {
+    border-color: #e74c3c;
+  }
+  
+  /* Required field indicator */
+  label::after {
+    content: " *";
+    color: #e74c3c;
+  }
+  
+  /* Remove asterisk from non-required fields */
+  label:not([for="topics"]):not([for="meritBadges"]):not([for="notes"])::after {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .meeting-request-form {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    .form-section {
+      padding: 15px;
+    }
+  }
+  

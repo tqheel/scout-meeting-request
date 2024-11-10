@@ -1,0 +1,41 @@
+<div class="confirmation-container" *ngIf="submittedData">
+    <h2>Meeting Request Confirmation</h2>
+    
+    <div class="confirmation-section">
+      <h3>Scout Information</h3>
+      <div class="info-group">
+        <p><strong>Name:</strong> {{submittedData.scoutFirstName}} {{submittedData.scoutLastName}}</p>
+        <p><strong>Rank:</strong> {{submittedData.rank}}</p>
+        <p><strong>Email:</strong> {{submittedData.scoutEmail}}</p>
+      </div>
+    </div>
+  
+    <div class="confirmation-section">
+      <h3>Meeting Details</h3>
+      <div class="info-group">
+        <p><strong>Date Requested:</strong> {{submittedData.dateRequested | date:'mediumDate'}}</p>
+        <p><strong>Topics:</strong> {{submittedData.topics || 'None specified'}}</p>
+        <p><strong>Merit Badges:</strong> {{submittedData.meritBadges || 'None specified'}}</p>
+      </div>
+    </div>
+  
+    <div class="confirmation-section">
+      <h3>Parent Information</h3>
+      <div class="info-group">
+        <p><strong>Name:</strong> {{submittedData.parentFirstName}} {{submittedData.parentLastName}}</p>
+        <p><strong>Email:</strong> {{submittedData.parentEmail}}</p>
+      </div>
+    </div>
+  
+    <div class="confirmation-section" *ngIf="submittedData.notes">
+      <h3>Additional Notes</h3>
+      <div class="info-group">
+        <p>{{submittedData.notes}}</p>
+      </div>
+    </div>
+  
+    <div class="button-container">
+      <button (click)="submitAnother()">Submit Another Request</button>
+    </div>
+  </div>
+  

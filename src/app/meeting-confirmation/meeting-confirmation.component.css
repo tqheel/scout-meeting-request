@@ -1,0 +1,61 @@
+.confirmation-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .confirmation-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+  }
+  
+  h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .info-group {
+    margin-left: 20px;
+  }
+  
+  .info-group p {
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+  
+  strong {
+    color: #34495e;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #27ae60;
+  }
+  
