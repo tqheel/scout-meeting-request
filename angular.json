@@ -16,6 +16,7 @@
             "outputPath": "dist/scout-meeting-request",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "baseHref": "/scout-meeting-request/",
             "polyfills": [
               "zone.js"
             ],
@@ -89,6 +90,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
